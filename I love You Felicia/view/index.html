@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicia Sui Cabo</title>
+  <link rel="stylesheet" href="../pages/api/styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="blur-overlay" id="blurOverlay">
+    <div class="captcha-container">
+      <h2>Situs ini hanya dapat diakses oleh William & Felicia</h2>
+      <p>Siapakah pacaranya Felicia?</p>
+      <input type="text" id="captchaInput" placeholder="Jawaban">
+      <button onclick="checkCaptcha()">Submit</button>
+      <p id="captchaMessage" style="color: red;"></p>
+    </div>
+  </div>
+
+  <div class="desktop-message">
+    <p>Maaf, gunakan ponsel untuk membuka halaman ini.</p>
+  </div>
+  <div class="card-container">
+    <div class="content-container">
+      <img id="profileImage" alt="Romantic Image" class="profile-image">
+      <div class="text-container">
+        <div class="text1 show">I love you, Felicia</div>
+        <div class="text2">Lu Si Sui Cabo</div>
+        <div class="text3">Ane Sui....</div>
+        <div class="text4">Yau Kin Sim Ai Sui</div>
+      </div>
+      <button class="love-button" onclick="showHearts()">
+        <i class="fas fa-heart"></i>
+      </button>
+      <div class="music-box">
+        <span class="music-title">Music Title</span>
+        <audio id="myAudio"></audio>
+        <div class="progress-bar" id="musicProgress">
+          <div class="progress-bar-fill"></div>
+        </div>
+        <div class="controls">
+          <button class="repeat-button" onclick="toggleRepeat()">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+          <button class="play-button" onclick="playMusic()">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+        <span class="music-duration">00:00</span>
+      </div>
+      <div class="lyrics-container">
+        <span class="lyrics"></span>
+      </div>
+    </div>
+  </div>
+  <script src="../pages/api/scripts.js"></script> 
+</body>
+</html>
